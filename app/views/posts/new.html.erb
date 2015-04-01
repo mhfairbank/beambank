@@ -1,0 +1,38 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6">
+      <div class="well bs-component">
+        <%= form_for @post, html: { class: "form-horizontal"}  do |f| %>
+				  <fieldset>
+            <legend>New Pulsd Post</legend>
+					  <label for="post_venue" class="col-lg-2 control-label">Venue</label>
+	          <div class="col-lg-10">
+					  	<%= f.text_field :venue, class: "form-control", placeholder: "Venue" %><br />
+					  </div>
+					  <label for="post_url" class="col-lg-2 control-label">URL</label>
+	          <div class="col-lg-10">
+					  	<%= f.text_field :url, class: "form-control", placeholder: "URL" %><br />
+					  </div>
+					  <label for="post_description" class="col-lg-2 control-label">Description</label>
+	          <div class="col-lg-10">
+					  	<%= f.text_field :description, class: "form-control", placeholder: "Description" %><br />
+					  </div>
+					  <label for="post_address" class="col-lg-2 control-label">Address</label>
+	          <div class="col-lg-10">
+					  	<%= f.text_field :address, class: "form-control", placeholder: "Address" %><br />
+					  </div>
+					  <label for="post_price" class="col-lg-2 control-label">Price</label>
+	          <div class="col-lg-10">
+					  	<%= f.text_field :price, class: "form-control", placeholder: "Price" %><br />
+					  </div>
+					  <label for="post_details" class="col-lg-2 control-label">Details</label>
+	          <div class="col-lg-10">
+					  	<%= f.text_area :details, class: "form-control", placeholder: "Details" %><br />
+					  </div>
+					  <%= f.submit "Submit", class: "btn btn-primary" %>
+					 </fieldset>
+				<% end %>
+      </div>
+    </div>
+  </div>
+</div>
